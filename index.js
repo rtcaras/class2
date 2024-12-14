@@ -28,6 +28,9 @@ function BankAccount(accountNumber, accountHolder, initialBalance) {
       };
   }
   
+  BankAccount.prototype.getBalance = function() {
+    return this.balance;
+};
 
   let myAccount = new BankAccount("123456789", "Mary Eyetan", 50000);
   
